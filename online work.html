@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <title>KENPAY </title>
+    <link rel="stylesheet" href="onlineworkstyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+ </head>
+<body>
+        <div class="navhead">
+                <nav class="nav1">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <label class="logo">KENPAY <i class="fa-solid fa-sack-dollar" aria-hidden="true"></i></label>
+                <button class="btnLogin-popup"><a href="#">Login</a></button>
+                
+                <ul class="lu">
+                    <li class="il"><a class="active" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="il"><a class="a" href="#"><i class="fa fa-user" aria-hidden="true"></i> about</a></li>
+                    <li class="il"><a class="a" href="#"><i class="fa fa-user" aria-hidden="true"></i> services</a></li>
+                    <li class="il"><a class="a" href="#"><i class="fa fa-phone" aria-hidden="true"></i> contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="services">
+            <button class="kencoin">KENCOIN</button>
+            <button class="bitcoin">BITCOIN</button>
+            <button class="forex">FOREX TRADING</button>
+            <button class="referals">REFERALS</button>
+        </div>
+        <div class="container activo-popup">
+                    <span class="icon-close">
+                        <ion-icon name="close"></ion-icon>
+                    </span>
+                <div class="form-box login">
+                        <form action="#">
+                            <h2>Login</h2>
+                            <div class="input-box">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" name="Email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" name="Password" placeholder="password">
+                            </div>
+                            <div class="button">
+                                <input type="submit" class="btn" value="Login">
+                            </div>
+                            <div class="group">
+                                <span><a href="#">Don't have an account</a></span>
+                                <span><a href="#" class="signup-link">signup</a></span>
+                            </div>  
+                        </form>
+                </div>
+                <div class="form-box signup">
+                        <form action="#">
+                                    <h2>signup</h2>
+                            <p id="result"></p>
+                            <div class="input-box">
+                                <i class='bx bxs-user'></i>
+                                <input type="text" name="Username" id="Username" placeholder="Enter your name">
+                            </div>
+                            <div class="input-box">
+                                <i class='bx bx-envelope'></i>
+                                <input type="email" name="Email" id="Email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" name="Password" id="password" placeholder="password">
+                            </div>
+                            <div class="input-box">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" name="Cpassword" id="Cpassword" placeholder="confirm password">
+                            </div>
+                            <div class="button">
+                                <input type="submit" class="btn" value="Register">
+                            </div>
+                            <div class="group">
+                                <span><a href="#">Already have an account</a></span>
+                                <span><a href="#" class="login-link">Login</a></span>
+                            </div>
+                        </form>
+                </div>
+         </div>
+            <div class="popup" id="popup">
+                <ion-icon name="checkbox-outline"></ion-icon>
+                <h2>Thank you!</h2>
+                <p>you were registered successfully. Thanks!</p>
+                <a href="logiin1.html"><button onclick="CloseSlide()">OK</button></a>
+            </div>
+        <footer class="footer">
+            <div class="container1">
+                <div class="row">
+                    <div class="contdiv">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="contdiv">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Trading signals</a></li>
+                            <li><a href="#">Affiliation programs</a></li>
+                            <li><a href="#">Withrawals & Deposits</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="contdiv">
+                        <h4>online Services</h4>
+                        <ul>
+                            <li><a href="#">Bitcoin</a></li>
+                            <li><a href="#">Forex Trading</a></li>
+                            <li><a href="#">Withrawals</a></li>
+                            <li><a href="#">Deposits</a></li>
+                        </ul>
+                    </div>
+                    <div class="contdiv">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
