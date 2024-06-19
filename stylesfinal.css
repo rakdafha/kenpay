@@ -1,0 +1,297 @@
+<style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:  rgb(3, 86, 107);
+            line-height: 1.5;
+            font-family: 'poppins', sans-serif;
+        }
+        .PDFSDIV{
+            display:block;
+            width: 100%;
+            background-color: transparent;
+            margin-bottom: 5px;
+        }
+        .NOTESBUTTON{
+            background-color: GREEN;
+            height: 80PX;
+            width: 49%;
+            float: right;
+            border-radius: 10%;
+            border-width: 0;
+        }
+        .NOTESBUTTON a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .REVISION{
+            height: 80PX;
+            width: 49%;
+            border-radius: 10%;
+            border-width: 0;
+        }
+        .REVISION a{
+            text-decoration: none;
+            font-size: small;
+            font-weight: bolder;
+        }
+        .histmain{
+            background-color: #ffffff;
+        }
+        .histotitle{
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            background-color:transparent;
+        }
+        .knec{
+            width: 100%;
+            font-size: larger;
+            font-weight: bold;
+            background-color: transparent;
+            border-width: 0;
+        }
+        .kcse{
+            width: 90%;
+            font-size: medium;
+            background-color: transparent;
+            border-width: 0;
+        }
+        .BURA{
+            width: 50%;
+            font-weight: bold;
+            background-color: transparent;
+            border-width: 0;
+        }
+        .Answers{
+            color: red;
+            font-family: serif;
+        }
+        .top{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .TOPSCHOOL{
+            background-color: blue;
+            height: 80px;
+            width: 60%;
+            border-radius: 50%;
+            border-width: 0;
+        }
+        .TOPSCHOOL a{
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .klb
+            {
+            background-color: rgb(107, 9, 243);
+            color: white;
+            border-radius: 30%;
+            border-width: 0;
+            }
+        .btn-klb
+            {
+            border-radius: 10%;
+            background: rgba(3, 7, 16, 0.386);
+            }
+        .btn-klb a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+        .btn
+            {
+                background: yellow;
+                border-radius: 50%;
+                color: white;
+                font-weight: 500;
+            }
+        .container-fluid
+            {
+                text-align: center;
+                display: inline-block;
+            }
+        .container-fluid .btn a{
+            text-decoration: none;
+            color:black;
+        }
+        .nav1{
+            background:transparent ;  
+            height: 80px;
+            width: 100%;
+        }
+        .logo{
+            color:white;
+            font-size: 15px;
+            line-height: 80px;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        .nav1 .lu{
+            float: right;
+            margin-right: 20px;
+        }
+        .nav1 .lu .il{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        .nav1 .lu .il .a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        .active, .lu .il .a:hover{
+            background:rgb(29, 196, 237);
+            font-size: 17px;
+            color: #ffffff;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            
+
+        }
+
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: inline;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width:952px){
+            .logo{
+                font-size: 20px;
+                padding-left: 10px;
+                font-weight: bold;
+            }
+            .nav1 .lu .il .a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width:858px){
+            .checkbtn{
+                display: block;
+            }
+            .lu{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+            
+            }
+            .nav1 .lu .il{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .nav1 .lu .il .a{
+                font-size: 20px;
+            }
+            .nav1 .active, .lu .il .a:hover{
+                background:none;
+                color: #0082e6;
+            }
+            #check:checked ~ .lu{
+                left: 0;
+            } 
+        }
+        @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap');
+        .container{
+            margin: auto;
+            max-width: 1170px;
+        }
+        ul{
+            list-style: none;
+        }
+        footer{
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+        .contdiv{
+            width: 25%;
+            padding: 0 15px;
+
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contdiv h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .contdiv h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color:#e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .contdiv ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .contdiv ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .contdiv ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .contdiv .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgb(3, 86, 107);
+            margin-right: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .contdiv .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+
+        }
+        /*responsive*/
+        @media(max-width:574px){
+            .contdiv{
+                width: 100%;
+            }
+        }
+
+    </style>
